@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* generic */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color:darkslateblue; */
+    background-image: linear-gradient(to bottom right, darkslateblue, #a78cf2);
+    font-family: 'Fredoka One', cursive;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* header */
+header{
+    /* background-color: white; */
+    background-image: linear-gradient(to right, white, whitesmoke);
+    padding: 5vh;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/* Score board ==>START */
+#score-board{
+    display: flex;
+    width: 25vw;
+    padding: 2vh 50px;
+    margin: 24px auto;
+    justify-content: space-around;
+    border: 5px solid white;
+    position: relative;
+    align-items: center;
+}
+
+.badge{
+    background-color: red;
+    width: 72px;
+    text-align: center;
+    position: absolute;
+    border-radius: 8%;
+    font-size: medium;
+   
+}
+
+#user-bagde{
+    left: -36px;
+}
+#comp-bagde{
+    right: -36px;
+}
+
+/* Score board ==>END */
+
+/* result msg */
+/* #result-msg{
+
+} */
+
+/* Choices ==>START */
+#choices{
+    display: flex;
+    justify-content: center;
+    margin: 24px 0px;
+}
+
+
+#choices div{
+    border: 5px solid white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background 0.5s ease-in;
+}
+
+#choices div:hover{
+    /* background-color: #6130e8; */
+    background-image: linear-gradient(to bottom right, #6130e8, #5019e6);
+    
+}
+
+@media screen and (max-width: 450px) {
+    #choices{
+        flex-direction: column;
+        width: fit-content;
+        margin: 10px auto;
+    }
+
+    #choices div {
+        padding: 5px; 
+    }
+
+    #choices div img{
+        width: 64px;  
+    }
+    
+}
+/* Choices ==>END */
